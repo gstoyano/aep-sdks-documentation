@@ -38,7 +38,7 @@ public void onNewToken(String token) {
                 additionalParams.put("serial", 12345);
                 additionalParams.put("premium", true);
                 // Send the registration info
-                CampaignClassic.registerDevice(token, "johndoe@gmail.com",                                  additionalParams,new AdobeCallback<Boolean>() {
+                CampaignClassic.registerDevice(token, "johndoe@gmail.com",additionalParams,new AdobeCallback<Boolean>() {
                     @Override
                     public void call(final Boolean status) {
                         Log.d("TestApp", "Registration Status: " + status);
